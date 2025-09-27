@@ -8,9 +8,9 @@ This environment consists of 5 virtual machines that work together to simulate a
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Load Balancer │    │  Jenkins Server │    │ Monitor Server  │
-│   (192.168.56.10)│    │ (192.168.56.13) │    │(192.168.56.14) │
-│     nginx        │    │   Jenkins CI/CD │    │ Prometheus +    │
+│  Load Balancer  │    │  Jenkins Server │    │ Monitor Server  │
+│ (192.168.56.10) │    │ (192.168.56.13) │    │ (192.168.56.14) │
+│      nginx      │    │  Jenkins CI/CD  │    │ Prometheus +    │
 │                 │    │                 │    │ Grafana         │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
          │                                              │
@@ -18,7 +18,7 @@ This environment consists of 5 virtual machines that work together to simulate a
          ▼                                              ▼
 ┌─────────────────┐                        ┌─────────────────┐
 │  App Server     │◄──────────────────────►│ Database Server │
-│ (192.168.56.11) │                        │(192.168.56.12) │
+│ (192.168.56.11) │                        │ (192.168.56.12) │
 │  Application    │                        │   PostgreSQL    │
 │  Service        │                        │                 │
 └─────────────────┘                        └─────────────────┘
